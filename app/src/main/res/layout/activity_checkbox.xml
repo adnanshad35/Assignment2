@@ -3,18 +3,64 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/light_background">
+
+    <TextView
+        android:id="@+id/promptText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please check the book name."
+        android:textSize="20sp"
+        android:textColor="@color/prompt_color"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"
+        android:textStyle="bold" />
 
     <CheckBox
         android:id="@+id/checkbox1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Option 1" />
+        android:text="Ikigai"
+        android:textSize="18sp"
+        android:textColor="@color/checkbox_text_color" />
 
     <CheckBox
         android:id="@+id/checkbox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Option 2" />
+        android:text="Dopamine Detox"
+        android:textSize="18sp"
+        android:textColor="@color/checkbox_text_color" />
+
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Alchemist"
+        android:textSize="18sp"
+        android:textColor="@color/checkbox_text_color" />
+
+    <Button
+        android:id="@+id/showSelectedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Selected Books"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/button_color"
+        android:layout_gravity="center_horizontal"
+        android:padding="12dp"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/selectedBooksText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingTop="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/result_text_color"
+        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
